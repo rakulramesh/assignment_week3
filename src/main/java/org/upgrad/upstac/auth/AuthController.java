@@ -54,9 +54,9 @@ public class AuthController {
             );
 
 
-//            if(userService.isApprovedUser( loginRequest.getUserName()) == false){
-//                throw new AppException("User Not Approved");
-//            }
+            if(userService.isApprovedUser( loginRequest.getUserName()) == false){
+                throw new AppException("User Not Approved");
+            }
 
 
 
